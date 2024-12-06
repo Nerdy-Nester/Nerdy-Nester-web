@@ -4,8 +4,6 @@ import Product from "../Products/Product";
 import {
   spfOne,
   spfTwo,
-  spfThree,
-  spfFour,
 } from "../../../assets/images/index";
 
 const SpecialOffers = () => {
@@ -16,38 +14,20 @@ const SpecialOffers = () => {
         <Product
           _id="1101"
           img={spfOne}
-          productName="Cap for Boys"
-          price="35.00"
-          color="Blank and White"
+          productName="Nerdy Nester Electric Wearable Portable Breast Pump"
+          price="KES 8,400.00"
+          color="White"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="A portable and wearable breast pump that offers comfort and convenience for moms on the go."
         />
         <Product
           _id="1102"
           img={spfTwo}
-          productName="Tea Table"
-          price="180.00"
+          productName="Nerdy Nester Portable Bottle Warmer"
+          price="KES 4,500.00"
           color="Gray"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-        />
-        <Product
-          _id="1103"
-          img={spfThree}
-          productName="Headphones"
-          price="25.00"
-          color="Mixed"
-          badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-        />
-        <Product
-          _id="1104"
-          img={spfFour}
-          productName="Sun glasses"
-          price="220.00"
-          color="Black"
-          badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Keep your baby’s milk at the perfect temperature with this portable bottle warmer, perfect for travel."
         />
       </div>
     </div>

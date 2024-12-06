@@ -5,18 +5,18 @@ import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 const Journal = () => {
   const location = useLocation();
   const [prevLocation, setPrevLocation] = useState("");
+
   useEffect(() => {
     setPrevLocation(location.state.data);
   }, [location]);
+
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Journals" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
-          <span className="text-primeColor font-semibold text-lg">Orebi</span>{" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-          reiciendis delectus vitae, aliquid sit iure dolorum commodi eum
-          numquam voluptate!
+          <span className="text-primeColor font-semibold text-lg">About Nerdy Nester</span>{" "}
+          Nerdy Nester is a dynamic startup revolutionizing the baby care industry with innovative and practical solutions. Our mission is to empower parents by simplifying the complexities of feeding and caring for their little ones. With a deep understanding of the challenges faced by modern parents, we design and develop products that prioritize convenience, safety, and efficiency.
         </h1>
         <Link to="/shop">
           <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">

@@ -3,15 +3,14 @@ import Slider from "react-slick";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  newArrOne,
+  newArrOne, // Make sure to replace with actual images for these products
   newArrTwo,
-  newArrThree,
-  newArrFour,
-} from "../../../assets/images/index";
+} from "../../../assets/images/index"; // Replace with appropriate image paths
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
 
 const NewArrivals = () => {
+  // Settings for the slider
   const settings = {
     infinite: true,
     speed: 500,
@@ -46,65 +45,46 @@ const NewArrivals = () => {
       },
     ],
   };
+
+  // Products to display in the New Arrivals section
+  const products = [
+    {
+      _id: "100001",
+      img: newArrOne, // Replace with the image for the breast pump
+      productName: "Nerdy Nester Electric Wearable Portable Breast Pump",
+      price: "KES 8400.00",
+      color: "White",
+      badge: true,
+      des: "A wearable electric breast pump designed for convenience and efficiency. Perfect for busy mothers on the go.",
+    },
+    {
+      _id: "100002",
+      img: newArrTwo, // Replace with the image for the bottle warmer
+      productName: "Nerdy Nester - Portable Bottle Warmer",
+      price: "KES 4500.00",
+      color: "White",
+      badge: true,
+      des: "A portable bottle warmer to keep your baby's milk at the perfect temperature, wherever you are.",
+    },
+  ];
+
   return (
     <div className="w-full pb-16">
       <Heading heading="New Arrivals" />
       <Slider {...settings}>
-        <div className="px-2">
-          <Product
-            _id="100001"
-            img={newArrOne}
-            productName="Round Table Clock"
-            price="44.00"
-            color="Black"
-            badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          />
-        </div>
-        <div className="px-2">
-          <Product
-            _id="100002"
-            img={newArrTwo}
-            productName="Smart Watch"
-            price="250.00"
-            color="Black"
-            badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          />
-        </div>
-        <div className="px-2">
-          <Product
-            _id="100003"
-            img={newArrThree}
-            productName="cloth Basket"
-            price="80.00"
-            color="Mixed"
-            badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          />
-        </div>
-        <div className="px-2">
-          <Product
-            _id="100004"
-            img={newArrFour}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
-            badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          />
-        </div>
-        <div className="px-2">
-          <Product
-            _id="100005"
-            img={newArrTwo}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
-            badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
-          />
-        </div>
+        {products.map((product) => (
+          <div key={product._id} className="px-2">
+            <Product
+              _id={product._id}
+              img={product.img}
+              productName={product.productName}
+              price={product.price}
+              color={product.color}
+              badge={product.badge}
+              des={product.des}
+            />
+          </div>
+        ))}
       </Slider>
     </div>
   );

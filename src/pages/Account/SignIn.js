@@ -7,13 +7,14 @@ const SignIn = () => {
   // ============= Initial State Start here =============
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // ============= Initial State End here ===============
-  // ============= Error Msg Start here =================
   const [errEmail, setErrEmail] = useState("");
   const [errPassword, setErrPassword] = useState("");
-
-  // ============= Error Msg End here ===================
   const [successMsg, setSuccessMsg] = useState("");
+
+  // ============= Validation Functions =============
+  const isValidEmail = (email) => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+  const isValidPassword = (password) => password.length >= 6;
+
   // ============= Event Handler Start here =============
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -24,18 +25,25 @@ const SignIn = () => {
     setErrPassword("");
   };
   // ============= Event Handler End here ===============
+
   const handleSignUp = (e) => {
     e.preventDefault();
 
+    // Validation
     if (!email) {
       setErrEmail("Enter your email");
+    } else if (!isValidEmail(email)) {
+      setErrEmail("Enter a valid email address");
     }
 
     if (!password) {
       setErrPassword("Create a password");
+    } else if (!isValidPassword(password)) {
+      setErrPassword("Password should be at least 6 characters");
     }
-    // ============== Getting the value ==============
-    if (email && password) {
+
+    // If email and password are valid, show success message
+    if (email && password && isValidEmail(email) && isValidPassword(password)) {
       setSuccessMsg(
         `Hello dear, Thank you for your attempt. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
       );
@@ -43,6 +51,7 @@ const SignIn = () => {
       setPassword("");
     }
   };
+
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
@@ -62,24 +71,10 @@ const SignIn = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with OREBI
+                Get started fast with Nerdy Nester
               </span>
               <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
-            </p>
-          </div>
-          <div className="w-[300px] flex items-start gap-3">
-            <span className="text-green-500 mt-1">
-              <BsCheckCircleFill />
-            </span>
-            <p className="text-base text-gray-300">
-              <span className="text-white font-semibold font-titleFont">
-                Access all OREBI services
-              </span>
-              <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
+              
             </p>
           </div>
           <div className="w-[300px] flex items-start gap-3">
@@ -90,15 +85,12 @@ const SignIn = () => {
               <span className="text-white font-semibold font-titleFont">
                 Trusted by online Shoppers
               </span>
-              <br />
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
-              nisi dolor recusandae consectetur!
             </p>
           </div>
           <div className="flex items-center justify-between mt-10">
             <Link to="/">
               <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-                © OREBI
+                © Nerdy Nester
               </p>
             </Link>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
@@ -122,7 +114,7 @@ const SignIn = () => {
             <Link to="/signup">
               <button
                 className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold 
-            tracking-wide hover:bg-black hover:text-white duration-300"
+                tracking-wide hover:bg-black hover:text-white duration-300"
               >
                 Sign Up
               </button>
@@ -138,7 +130,7 @@ const SignIn = () => {
                 {/* Email */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                    Email
                   </p>
                   <input
                     onChange={handleEmail}

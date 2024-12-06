@@ -27,19 +27,19 @@ const Footer = () => {
       setEmailInfo("");
     }
   };
+
   return (
     <div className="w-full bg-[#F5F5F3] py-20">
-      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
+      <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
-          <FooterListTitle title=" More about Orebi Shop" />
+          <FooterListTitle title="More about Nerdy Nester" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
-              ab ullam, numquam nesciunt in.
+              At Nerdy Nester, we’re revolutionizing baby care with innovative solutions that simplify feeding, nurturing, and supporting modern parents.
             </p>
             <ul className="flex items-center gap-2">
               <a
-                href="https://www.youtube.com/@reactjsBD"
+                href="https://www.tiktok.com/@nerdy.nester"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -48,16 +48,7 @@ const Footer = () => {
                 </li>
               </a>
               <a
-                href="https://github.com/noorjsdivs"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
-                  <FaGithub />
-                </li>
-              </a>
-              <a
-                href="https://www.facebook.com/Noorlalu143/"
+                href="https://www.instagram.com/nerdy_nester/?igsh=MXMwbGNscGtocjZnaA%3D%3D"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -66,7 +57,16 @@ const Footer = () => {
                 </li>
               </a>
               <a
-                href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+                href="https://web.facebook.com/people/Nerdy-Nester/61560233074943/?mibextid=qi2Omg&rdid=MDtx3u2ydR5USRQF&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2FsWoFJqX8vrgb3aw5%2F%3Fmibextid%3Dqi2Omg%26_rdc%3D1%26_rdr"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
+                  <FaGithub />
+                </li>
+              </a>
+              <a
+                href="https://www.threads.net/@nerdy_nester"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -81,7 +81,7 @@ const Footer = () => {
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Accesories
+              Accessories
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Clothes
@@ -90,7 +90,7 @@ const Footer = () => {
               Electronics
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              Home appliances
+              Home Appliances
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               New Arrivals
@@ -98,7 +98,7 @@ const Footer = () => {
           </ul>
         </div>
         <div>
-          <FooterListTitle title="Your account" />
+          <FooterListTitle title="Your Account" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Profile
@@ -121,7 +121,7 @@ const Footer = () => {
           <FooterListTitle title="Subscribe to our newsletter." />
           <div className="w-full">
             <p className="text-center mb-4">
-              A at pellentesque et mattis porta enim elementum.
+              Stay updated with the latest from Nerdy Nester, helping you make parenting easier.
             </p>
             {subscription ? (
               <motion.p
@@ -130,7 +130,7 @@ const Footer = () => {
                 transition={{ duration: 0.5 }}
                 className="w-full text-center text-base font-titleFont font-semibold text-green-600"
               >
-                Subscribed Successfully !
+                Subscribed Successfully!
               </motion.p>
             ) : (
               <div className="w-full flex-col xl:flex-row flex justify-between items-center gap-4">
@@ -158,9 +158,7 @@ const Footer = () => {
             )}
 
             <Image
-              className={`w-[80%] lg:w-[60%] mx-auto ${
-                subscription ? "mt-2" : "mt-6"
-              }`}
+              className={`w-[80%] lg:w-[60%] mx-auto ${subscription ? "mt-2" : "mt-6"}`}
               imgSrc={paymentCard}
             />
           </div>

@@ -6,34 +6,31 @@ const Price = () => {
     {
       _id: 950,
       priceOne: 0.0,
-      priceTwo: 49.99,
+      priceTwo: 4500.0,
     },
     {
       _id: 951,
-      priceOne: 50.0,
-      priceTwo: 99.99,
+      priceOne: 4500.0,
+      priceTwo: 8400.0,
     },
     {
       _id: 952,
-      priceOne: 100.0,
-      priceTwo: 199.99,
+      priceOne: 8400.0,
+      priceTwo: 13000.0, // This is an example of the next price range.
     },
     {
       _id: 953,
-      priceOne: 200.0,
-      priceTwo: 399.99,
+      priceOne: 13000.0,
+      priceTwo: 20000.0,
     },
     {
       _id: 954,
-      priceOne: 400.0,
-      priceTwo: 599.99,
+      priceOne: 20000.0,
+      priceTwo: 30000.0,
     },
-    {
-      _id: 955,
-      priceOne: 600.0,
-      priceTwo: 1000.0,
-    },
+    // Add more price ranges as needed.
   ];
+
   return (
     <div className="cursor-pointer">
       <NavTitle title="Shop by Price" icons={false} />
@@ -44,7 +41,7 @@ const Price = () => {
               key={item._id}
               className="border-b-[1px] border-b-[#F0F0F0] pb-2 flex items-center gap-2 hover:text-primeColor hover:border-gray-400 duration-300"
             >
-              ${item.priceOne.toFixed(2)} - ${item.priceTwo.toFixed(2)}
+              KES {item.priceOne.toFixed(2)} - KES {item.priceTwo.toFixed(2)}
             </li>
           ))}
         </ul>
