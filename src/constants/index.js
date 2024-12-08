@@ -37,8 +37,8 @@ export const navBarList = [
   },
   {
     _id: 1005,
-    title: "Journal",
-    link: "/journal",
+    title: "Login",
+    link: "/signin",
   },
 ];
 // =================== NavBarList End here ======================
@@ -89,7 +89,7 @@ export const paginationItems = [
   {
     _id: 1001,
     img: spfOne,
-    productName: "Cap for Boys",
+    productName: "test",
     price: "35.00",
     color: "Blank and White",
     badge: true,
