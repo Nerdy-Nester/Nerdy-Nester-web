@@ -53,31 +53,40 @@ export const SplOfferData = [
     badge: true,
     des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
   },
-  {
-    _id: "202",
-    img: newArrFour,
-    productName: "Tea Table",
-    price: "180.00",
-    color: "Gray",
-    badge: true,
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
-  },
+ 
   {
     _id: 1002,
     img: spfTwo,
     productName: "Nerdy Nester - Portable Bottle Warmer",
-    price: "KES. 4500.00",
+    price: "KES. 4,500.00",
     badge: true,
-    des: "A portable bottle warmer is a compact, lightweight device designed to heat baby bottles on the go. It typically uses USB power or batteries and includes safety features to prevent overheating. Ideal for travel and outings..",
-  },
-  {
-    _id: 1001,
-    img: spfOne,
-    productName: "Nerdy Nester Electric Wearable Portable Breast Pump",
-    price: "KES. 8400.00",
-    badge: true,
-    des: " The hands free breast pump can be wear under nursing bra well for more convenient pumping. Moms can pump breast milk anytime anywhere.",
-  },
+    des: "Stay prepared wherever you are with our versatile wireless bottle warmer. Designed for travel, outings, and everyday use, this portable bottle warmer can be used while charging or plugged in, ensuring you can brew baby bottles anytime, anywhere.",
+    details: {
+        features: [
+            "360-Degree Surround Heating: Enjoy evenly heated milk with 6 adjustable temperature levels (37°C, 40°C, 42°C, 45°C, 50°C, 55°C).",
+            "Long-Lasting Insulation: Multiple thermal insulation materials to keep milk warmer for longer while saving energy.",
+            "Adjustable Fit: Hook and loop fastener adapts to various shapes of baby bottles for a secure fit.",
+            "Precise Temperature Control: Spring temperature control head ensures accurate heating.",
+            "Stable Heating: Two 3000 mAh batteries provide consistent and reliable warmth."
+        ],
+        specifications: {
+            chargingTime: "5 hours",
+            battery: "18650 lithium battery, 6000 mAh capacity",
+            batteryLife: "Approximately 300 cycles",
+            power: "18W",
+            heatingDuration: "90 minutes",
+            keepWarmDuration: "2.5-5 hours",
+            heatingTime: "30 minutes",
+            voltage: "5V",
+            output: "2A",
+            dimensions: "55 x 145 x 87 mm",
+            weight: "225g"
+        },
+        safetyReminder: "Ensure the bottom of the bottle is tightly attached to the spring-loaded temperature control head for accurate temperature measurement. Always check the temperature before feeding."
+    }
+}
+
+ 
 ];
 // =================== Special Offer data End here ==============
 
@@ -96,10 +105,34 @@ export const paginationItems = [
     _id: 1002,
     img: spfTwo,
     productName: "Nerdy Nester - Portable Bottle Warmer",
-    price: "KES. 4500.00",
+    price: "KES. 4,500.00",
     badge: true,
-    des: "A portable bottle warmer is a compact, lightweight device designed to heat baby bottles on the go. It typically uses USB power or batteries and includes safety features to prevent overheating. Ideal for travel and outings..",
-  },
+    des: "Stay prepared wherever you are with our versatile wireless bottle warmer. Designed for travel, outings, and everyday use, this portable bottle warmer can be used while charging or plugged in, ensuring you can brew baby bottles anytime, anywhere.",
+    details: {
+        features: [
+            "360-Degree Surround Heating: Enjoy evenly heated milk with 6 adjustable temperature levels (37°C, 40°C, 42°C, 45°C, 50°C, 55°C).",
+            "Long-Lasting Insulation: Multiple thermal insulation materials to keep milk warmer for longer while saving energy.",
+            "Adjustable Fit: Hook and loop fastener adapts to various shapes of baby bottles for a secure fit.",
+            "Precise Temperature Control: Spring temperature control head ensures accurate heating.",
+            "Stable Heating: Two 3000 mAh batteries provide consistent and reliable warmth."
+        ],
+        specifications: {
+            chargingTime: "5 hours",
+            battery: "18650 lithium battery, 6000 mAh capacity",
+            batteryLife: "Approximately 300 cycles",
+            power: "18W",
+            heatingDuration: "90 minutes",
+            keepWarmDuration: "2.5-5 hours",
+            heatingTime: "30 minutes",
+            voltage: "5V",
+            output: "2A",
+            dimensions: "55 x 145 x 87 mm",
+            weight: "225g"
+        },
+        safetyReminder: "Ensure the bottom of the bottle is tightly attached to the spring-loaded temperature control head for accurate temperature measurement. Always check the temperature before feeding."
+    }
+}
+
 
 ];
 // =================== PaginationItems End here =================
