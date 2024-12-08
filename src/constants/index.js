@@ -48,10 +48,9 @@ export const SplOfferData = [
     _id: "201",
     img: spfOne,
     productName: "Nerdy Nester Electric Wearable Portable Breast Pump",
-    price: "35.00",
-    color: "Blank and White",
+    price: "KES. 8400.00",
     badge: true,
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis.",
+    des: "The hands free breast pump can be wear under nursing bra well for more convenient pumping. Moms can pump breast milk anytime anywhere.",
   },
  
   {
