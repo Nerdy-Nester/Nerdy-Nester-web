@@ -5,7 +5,7 @@ import { addToCart } from "../../../redux/orebiSlice";
 
 const ProductInfo = ({ productInfo }) => {
   const dispatch = useDispatch();
-
+  
   if (!productInfo) {
     return <p>Loading product details...</p>;
   }
