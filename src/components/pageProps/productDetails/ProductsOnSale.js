@@ -21,7 +21,7 @@ const ProductsOnSale = () => {
               <img
                 className="w-24"
                 src={item.img}
-                alt={`${item.productName} image`}
+                alt={`${item.productName}`}
               />
             </div>
             <div className="flex flex-col gap-2 font-titleFont">
