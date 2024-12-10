@@ -25,7 +25,6 @@ const HeaderBottom = () => {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [showSearchBar, setShowSearchBar] = useState(false);
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
@@ -100,7 +99,6 @@ const HeaderBottom = () => {
                             },
                           }
                         ) &
-                        setShowSearchBar(true) &
                         setSearchQuery("")
                       }
                       key={item._id}
