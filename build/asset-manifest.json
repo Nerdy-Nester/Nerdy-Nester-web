@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.707e6aad.css",
+    "main.js": "/static/js/main.76fbedd4.js",
+    "static/media/newArrOne.webp": "/static/media/newArrOne.4449a3bfceedf5ba1742.webp",
+    "static/media/saleImgOne.webp": "/static/media/saleImgOne.f723922fad383f27dd52.webp",
+    "static/media/bestSellerOne.webp": "/static/media/bestSellerOne.5d3d1967e141f39af23c.webp",
+    "static/media/spfFour.webp": "/static/media/spfFour.5d3d1967e141f39af23c.webp",
+    "static/media/bestSellerFour.webp": "/static/media/bestSellerFour.7076907849de94e471d3.webp",
+    "static/media/bestSellerTwo.webp": "/static/media/bestSellerTwo.e1d1cab156b9a2b979a7.webp",
+    "static/media/bannerImgThree.webp": "/static/media/bannerImgThree.6a1e1db9579392f38467.webp",
+    "static/media/bannerImgTwo.webp": "/static/media/bannerImgTwo.a60f845044329a4e93b7.webp",
+    "static/media/bannerImgOne.webp": "/static/media/bannerImgOne.7b1cf12372750cd76947.webp",
+    "static/media/spfOne.webp": "/static/media/spfOne.194e9486485e3a124cab.webp",
+    "static/media/bestSellerThree.webp": "/static/media/bestSellerThree.81d922ea3bc954311f02.webp",
+    "static/media/newArrTwo.webp": "/static/media/newArrTwo.81d922ea3bc954311f02.webp",
+    "static/media/spfTwo.webp": "/static/media/spfTwo.81d922ea3bc954311f02.webp",
+    "static/media/saleImgThree.webp": "/static/media/saleImgThree.9b53bdf2f719e0cdd5d4.webp",
+    "static/media/saleImgTwo.webp": "/static/media/saleImgTwo.42264e7f48960bea56cd.webp",
+    "static/media/productOfTheYear.webp": "/static/media/productOfTheYear.7a597a63049aab6ad4d8.webp",
+    "static/media/logoLight.png": "/static/media/logoLight.17a90fb75ae36bb00468.png",
+    "static/media/orebiLogo.png": "/static/media/orebiLogo.17a90fb75ae36bb00468.png",
+    "static/media/newArrThree.webp": "/static/media/newArrThree.137dcefaee781098fd8a.webp",
+    "static/media/payment.png": "/static/media/payment.3e00cc601c9e7fc1e7d3.png",
+    "static/media/spfThree.webp": "/static/media/spfThree.6cb3efbf50b7191d9031.webp",
+    "static/media/newArrFour.webp": "/static/media/newArrFour.b8a5fda6839f2f0b1eaa.webp",
+    "static/media/emptyCart.png": "/static/media/emptyCart.230e4848b62fb3cab325.png",
+    "index.html": "/index.html",
+    "main.707e6aad.css.map": "/static/css/main.707e6aad.css.map",
+    "main.76fbedd4.js.map": "/static/js/main.76fbedd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.707e6aad.css",
+    "static/js/main.76fbedd4.js"
+  ]
+}
